@@ -11,7 +11,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: railsjobs_cz_development
+  database: railsjobs_cz
   pool: 5
   username: root
   password:
@@ -32,7 +32,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: railsjobs_cz_production
+  database: railsjobs_cz
   pool: 5
   username: root
   password:

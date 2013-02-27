@@ -4,6 +4,10 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.0.beta1'
 
 gem 'mysql2'
+gem 'devise'
+gem "awesome_print"
+gem 'unicorn'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +28,17 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
+
+group :development do
+  gem 'quiet_assets'
+  gem 'ya2yaml'
+  gem "thin"
+  gem 'capistrano'
+  gem 'capistrano-unicorn'
+  gem 'rvm-capistrano'
+  gem 'meta_request', '0.2.1'
+  gem 'binding_of_caller'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
