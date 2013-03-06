@@ -1,0 +1,61 @@
+<div class="row-fluid row-dynamic-el" style="margin-bottom:-40px;">
+	<div class="span12">
+		<div class="row-fluid head_text">
+			<div class="span12">
+				<h1>Step 1: Create your Job Listing</h1>
+				<h4>
+					Don't worry it only takes few minutes!
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= form_for(@job) do |form| %>
+<p>
+	<%= form.label :company_name, "Company name" %>
+	<%= form.text_field :company_name, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :company_url, "Company URL" %>
+	<%= form.text_field :company_url, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :title, "Title" %>
+	<%= form.text_field :title, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :city, "City" %>
+	<%= form.text_field :city, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :address, "Address" %>
+	<%= form.text_field :address, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :country, "Country" %>
+	<%= form.text_field :country, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :description, "Description" %>
+	<%= form.text_area :description, "aria-required" => true %>
+</p>
+
+<p>
+	<%= form.label :instructions, "Instructions" %>
+	<%= form.text_area :instructions, "aria-required" => true %>
+</p>
+
+<p class="form-submit">
+	<%= form.submit "Next "%>
+</p>
+
+
+
+<% end%>

@@ -10,7 +10,25 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
+//= require jquery4511
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require layerslider.kreaturamedia.jquery3b71
+//= require jquery-easing-1.36f3e
+//= require bootstrap.min68b3
+//= require jquery.easing.1.168b3
+//= require jquery.easing.1.368b3
+//= require superfish68b3
+//= require jquery.mobilemenu68b3
+//= require isotope68b3
+//= require jquery.debouncedresize68b3
+//= require jquery.throttledresize68b3
+//= require customSelect.jquery.min68b3
+//= require jquery.flexslider-min68b3
+//= require jquery.fancybox68b3
+//= require jquery.fancybox-media68b3
+//= require jquery.mousewheel.min68b3
+//= require jquery.touchSwipe.min68b3
+//= require jquery.carouFredSel-6.1.0-packed68b3
+//= require mediaelement-and-player.min68b3
+//= require main68b3

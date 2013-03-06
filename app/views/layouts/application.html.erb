@@ -1,14 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
 <head>
-  <title>RailsjobsCz</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="UTF-8" />
+
+	<title>RailsJobs</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<!-- Base Css -->
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 </head>
 <body>
+	<!-- Attention Grabber -->
 
-<%= yield %>
+	<div class="boxed_layout">
+		<div id="attention">
+			<div class="container">
+				<div class="row-fluid">
+					<div class="span4">
+						<div class="widget widget_text">
+							<div class="textwidget">We Build Super Awesome WordPress Themes.</div>
+							<span class="seperator extralight-border"></span>
+						</div>
+					</div>
+					<div class="span4">
+						<div  class="widget widget_subscribers">
 
+							<a href="#" class="s_twitter">
+								<span class="img">
+									<span></span>
+								</span> <strong></strong>
+							</a>
+
+							<a href="#" class="s_facebook">
+								<span class="img">
+									<span></span>
+								</span> <strong>8641128</strong>
+							</a>
+
+							<span class="seperator extralight-border"></span>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="widget widget_search">
+							<form action="http://trusted1.themeple.co/" id="search-form">
+								<div class="input-append">
+									<input type="text" size="16" placeholder="Search here&hellip;" name="s" id="s">
+									<button type="submit" class="more">Search</button>
+								</div>
+							</form>
+							<span class="seperator extralight-border"></span>
+						</div>
+					</div>
+					<div class="span1 close-button">
+						<button class="close_button">Close</button>
+					</div>
+
+				</div>
+				<span class="open_button"></span>
+			</div>
+		</div>
+		<!-- #attention -->
+		<!-- Header -->
+		<header id="header">
+			<div class="container">
+				<div class="row-fluid">
+					<!-- Logo -->
+					<div id="logo" class="span3">
+						<%= link_to(image_tag("logo.png"), root_path) %>
+					</div>
+					<!-- #logo -->
+
+					<!-- Main menu -->
+					<div id="navigation" class="span9">
+
+						<nav>
+							<ul class="menu">
+								<li>
+									<%= link_to "Browse Jobs", jobs_path %>
+								</li>
+								<li>
+									<%= link_to "Browse Developers", users_path %>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+					<!-- #navigation -->
+
+				</div>
+
+			</div>
+			<!-- .container -->
+
+		</header>
+		<div class="top_wrapper">
+			<div class="container">
+				<span class="shadow_header"></span>
+			</div>
+
+			<!-- .header -->
+			<!-- Page Head -->
+
+			<section id="content">
+				<div class="container">
+					<%= yield %>
+
+				</div>
+			</section>
+
+			<!-- Social Profiles -->
+
+			<!-- Footer -->
+		</div>
+
+		<footer id="footer">
+
+			<div class="inner">
+				<div class="container">
+					<div class="row-fluid">
+
+						<!-- widget -->
+						<div class="span3">
+
+							<div class="widget widget_text">
+								<h4 class="widget-title">Contact</h4>
+								<div class="textwidget">
+									<p>
+										Adresa
+										<br />
+										Rr Mihal Duri Pall 58
+										<br />
+										Tirane, Albania
+									</p>
+									<p>email@yahoo.com</p>
+								</div>
+								<span class="seperator extralight-border"></span>
+							</div>
+						</div>
+
+						<div class="span3">
+
+							<div class="widget widget_recent_posts">
+								<h4 class="widget-title">From Blog</h4>
+								<dl>
+									<dd>
+										Communication Satellite Dish
+										<a href="index60bd.html?p=379">December 17, 2012</a>
+									</dd>
+								</dl>
+								<dl>
+									<dd>
+										Business Outlook
+										<a href="indexf454.html?p=308">December 15, 2012</a>
+									</dd>
+								</dl>
+								<span class="seperator extralight-border"></span>
+							</div>
+						</div>
+
+						<div class="span3">
+
+							<div  class="widget widget_twitter">
+								<h4 class="widget-title">Latest Tweets</h4>
+								<ul class='tweet_list'>
+									<li class="tweet">
+										Community Superstar Winner – Dysko
+										<a href="http://t.co/bXAJq4fG" class="twitter-link">http://t.co/bXAJq4fG</a>
+										<dl>
+											<dt>
+												<span class="tweet_icon"></span>
+											</dt>
+											<dd>
+												<h4>@Envato</h4>
+												<span class="date">February 2, 2013 - 9:25 am</span>
+											</dd>
+										</dl>
+									</li>
+									<li class="tweet">
+										How Slow Searches Killed the Marketplaces (and How We Fixed It)
+										<a href="http://t.co/qJepS4s5" class="twitter-link">http://t.co/qJepS4s5</a>
+										<dl>
+											<dt>
+												<span class="tweet_icon"></span>
+											</dt>
+											<dd>
+												<h4>@Envato</h4>
+												<span class="date">February 1, 2013 - 6:25 pm</span>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+								<span class="seperator extralight-border"></span>
+							</div>
+						</div>
+
+						<div class="span3">
+
+							<div class="widget widget_contact">
+								<div class="subscribers row-fluid">
+									<div class="span12">
+										<div class="row-fluid">
+											<h5>Subscribe to our newsletter</h5>
+											<input type="text" placeholder="Enter your email">
+											<button class="btn">Subscribe</button>
+										</div>
+									</div>
+								</div>
+								<h2>Tel: (212) 555 5000</h2>
+								<dl>
+									<dt></dt>
+									<dd>
+										<a href="http://goo.gl/maps/jMLN4">Click here to view us on a map.</a>
+									</dd>
+								</dl>
+								<span class="seperator extralight-border"></span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							Copyright 2013 Trusted. All Rights Reserved.
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- #copyright -->
+
+		</footer>
+		<!-- #footer -->
+
+	</div>
 </body>
+
 </html>

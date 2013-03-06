@@ -1,0 +1,38 @@
+<div class="row-fluid row-dynamic-el" style="margin-bottom:-40px;">
+	<div class="span12">
+		<div class="row-fluid head_text">
+			<div class="span12">
+				<h1>Step 2: Approve your Job Listing</h1>
+				<h4>
+					Nice! You are literally seconds away from your next Ruby Ninja
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>Company Name</h2>
+<%= @job.company_name %>
+
+<h2>Company URL</h2>
+<%= @job.company_url%>
+
+<h2>Title</h2>
+<%= @job.title %>
+
+<h2>City</h2>
+<%= @job.city %>
+
+<h2>Address</h2>
+<%= @job.address %>
+
+<h2>Country</h2>
+<%= @job.country %>
+
+<h2>Description</h2>
+<%= @job.description %>
+
+<h2>Instructions</h2>
+<%= @job.instructions %>
+
+<%= link_to "Approve", :controller => "jobs", :action => "approve", :id => @job %>
